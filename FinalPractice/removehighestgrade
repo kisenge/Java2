@@ -1,0 +1,35 @@
+
+
+public void removeHighestGrade throws NoSuchElementException
+    { 
+        Node current=head;
+        int highest=0;
+        Node temp; 
+  
+        if(head=null){
+            throw NoSuchElementException();
+        }
+      
+        temp =  head; 
+  
+        while (temp != null) { 
+  
+            if (temp.data > highest){
+                highest = temp.data; 
+            }
+            temp = temp.next; 
+            
+
+            if(temp.next=null){
+            temp=head;
+                while(temp!=null){
+                    if(temp.next=highest){
+
+                    }
+                    temp.next=temp.next.next;
+
+                }
+            }
+        } 
+        
+    } 
